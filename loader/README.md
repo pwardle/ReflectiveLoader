@@ -6,7 +6,7 @@
 ### % cmake ..
 ### % make 
 
-### ...this will create library in build/
+### ...this will create library in build/ that the PoC links against. 
 
 ## Custom Mach-O Image Loader. Tolerant to unsigned modules.
 
