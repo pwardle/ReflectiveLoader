@@ -42,6 +42,13 @@ int main(int argc, const char * argv[]) {
         payload = [NSData dataWithContentsOfFile:path];
     }
     
+    //sanity
+    if(0 == payload.length)
+    {
+        printf("ERROR: Failed to download or read payload into memory.\n\n");
+        exit(-1);
+    }
+    
     printf("    payload now in memory (size: %lu), ready for loading/linking...\n", static_cast<unsigned long>(payload.length));
     
     printf("\nPress any key to continue...\n");
